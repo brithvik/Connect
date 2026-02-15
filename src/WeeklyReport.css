@@ -1,0 +1,218 @@
+/* WeeklyReport.css */
+.weekly-report {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.weekly-report h2 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 24px;
+}
+
+.report-grade {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 32px;
+  border-radius: 20px;
+  color: white;
+  margin-bottom: 24px;
+}
+
+.grade-circle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+}
+
+.grade-emoji {
+  font-size: 48px;
+}
+
+.grade-letter {
+  font-size: 36px;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.grade-text h3 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.grade-text p {
+  margin: 8px 0 0 0;
+  opacity: 0.9;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.stat-card {
+  background: white;
+  padding: 24px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.stat-emoji {
+  font-size: 40px;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.stat-card h3 {
+  font-size: 32px;
+  color: #667eea;
+  margin: 8px 0;
+}
+
+.stat-card p {
+  color: #666;
+  margin: 4px 0;
+}
+
+.stat-detail {
+  font-size: 14px;
+  color: #999;
+}
+
+.comparison-section h3 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 16px;
+}
+
+.comparison-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 16px;
+}
+
+.comparison-card {
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.comparison-card.best {
+  background: linear-gradient(135deg, #48dbfb 0%, #0abde3 100%);
+  color: white;
+}
+
+.comparison-card.worst {
+  background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%);
+  color: white;
+}
+
+.comparison-label {
+  font-size: 18px;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.comparison-date {
+  font-size: 14px;
+  opacity: 0.9;
+  margin-bottom: 16px;
+}
+
+.comparison-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.comparison-stats span {
+  font-size: 14px;
+  opacity: 0.95;
+}
+
+.mood-highlight {
+  font-weight: bold;
+  margin-top: 8px;
+  font-size: 16px !important;
+}
+.week-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.week-selector select {
+  padding: 12px 20px;
+  border-radius: 12px;
+  border: 2px solid #e0e0e0;
+  font-size: 16px;
+  font-weight: 600;
+  background: white;
+  cursor: pointer;
+}
+
+.week-date-range {
+  color: #666;
+  margin-bottom: 24px;
+  font-size: 14px;
+}
+
+.week-comparison {
+  margin-top: 32px;
+  padding: 24px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.comparison-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.change-card {
+  text-align: center;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 12px;
+}
+
+.change-emoji {
+  font-size: 32px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.change-card h4 {
+  margin: 8px 0;
+  color: #666;
+}
+
+.change-card p {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 8px 0;
+}
+
+.change-card p.positive {
+  color: #48dbfb;
+}
+
+.change-card p.negative {
+  color: #ff6b6b;
+}

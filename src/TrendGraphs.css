@@ -1,0 +1,121 @@
+.trend-graphs {
+  margin-bottom: 24px;
+}
+
+.motivation-banner {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 24px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 20px;
+  margin-bottom: 24px;
+  box-shadow: 0 8px 24px rgba(102, 126, 234, 0.3);
+  animation: slideIn 0.6s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.motivation-icon {
+  font-size: 48px;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.motivation-content {
+  flex: 1;
+  color: white;
+}
+
+.motivation-content h3 {
+  font-size: 24px;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+.motivation-content p {
+  font-size: 15px;
+  line-height: 1.5;
+  opacity: 0.95;
+}
+
+.graphs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+.graph-card {
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.graph-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.graph-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.graph-header h4 {
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
+}
+
+.trend-badge {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.trend-badge.positive {
+  background: #d4f4dd;
+  color: #2ecc71;
+}
+
+.trend-badge.negative {
+  background: #ffe4e4;
+  color: #ff6b6b;
+}
+
+@media (max-width: 768px) {
+  .graphs-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .motivation-banner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .motivation-icon {
+    font-size: 64px;
+  }
+}
